@@ -3,11 +3,6 @@ package com.kakura.task2.repository;
 import com.kakura.task2.entity.Rectangle;
 
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.IntFunction;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
 
 public class RectangleRepository {
     private static final RectangleRepository instance = new RectangleRepository();

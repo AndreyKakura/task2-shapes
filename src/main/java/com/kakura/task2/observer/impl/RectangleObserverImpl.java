@@ -7,8 +7,6 @@ import com.kakura.task2.service.Impl.RectangleServiceImpl;
 import com.kakura.task2.service.RectangleService;
 import com.kakura.task2.warehouse.RectangleParameters;
 import com.kakura.task2.warehouse.Warehouse;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class RectangleObserverImpl implements RectangleObserver {
 

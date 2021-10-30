@@ -3,10 +3,8 @@ package com.kakura.task2.repository;
 import com.kakura.task2.entity.Point;
 import com.kakura.task2.entity.Rectangle;
 import com.kakura.task2.repository.impl.FirstQuadrantSpecification;
-import com.kakura.task2.repository.impl.IdSpecification;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
