@@ -14,7 +14,7 @@ public class ParserImpl implements Parser {
     public List<double[]> parseStringListToCoordinates(List<String> stringList) {
         List<double[]> coordinatesList = new ArrayList<>();
 
-        for(String string : stringList) {
+        for (String string : stringList) {
             String[] stringArray = string.split(REGEX_DELIMITER);
             coordinatesList.add(Arrays.stream(stringArray).mapToDouble(Double::parseDouble).toArray());
         }

@@ -105,7 +105,7 @@ public class Rectangle implements Observable {
 
     @Override
     public void notifyObserver() {
-        if(observer == null) {
+        if (observer == null) {
             return;
         }
 

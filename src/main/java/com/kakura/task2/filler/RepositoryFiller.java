@@ -15,8 +15,8 @@ public class RepositoryFiller {
         warehouseFiller.fillWarehouse(rectangle);
     }
 
-    public void fillRepository(List<Rectangle>rectangles) {
-        for(Rectangle rectangle : rectangles) {
+    public void fillRepository(List<Rectangle> rectangles) {
+        for (Rectangle rectangle : rectangles) {
             fillRepository(rectangle);
         }
     }

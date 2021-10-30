@@ -14,15 +14,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RepositoryFillerTest {
     private RepositoryFiller repositoryFiller;
+    private RectangleRepository repository;
 
     @BeforeEach
     void setUp() {
         repositoryFiller = new RepositoryFiller();
+        repository = RectangleRepository.getInstance();
     }
 
     @AfterEach
     void tearDown() {
         repositoryFiller = null;
+        repository = null;
     }
 
     @Test
@@ -31,9 +34,7 @@ class RepositoryFillerTest {
                 new Point(7, 1));
         repositoryFiller.fillRepository(expectedRectangle);
 
-        RectangleRepository repository = RectangleRepository.getInstance();
-
-        assertEquals(expectedRectangle, repository.getRectangles().get(0));
+        assertEquals(expectedRectangle, repository.getRectangles().get(repository.size() - 1));
     }
 
     @Test
@@ -45,8 +46,6 @@ class RepositoryFillerTest {
                 new Point(6, 2)));
 
         repositoryFiller.fillRepository(expectedList);
-
-        RectangleRepository repository = RectangleRepository.getInstance();
 
         assertEquals(expectedList, repository.getRectangles());
     }

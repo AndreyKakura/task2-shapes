@@ -18,14 +18,14 @@ public class WarehouseFiller {
         RectangleObserver observer = new RectangleObserverImpl();
 
         rectangle.attach(observer);
-        double perimeter= rectangleService.findPerimeter(rectangle);
+        double perimeter = rectangleService.findPerimeter(rectangle);
         double area = rectangleService.findArea(rectangle);
         RectangleParameters parameters = new RectangleParameters(perimeter, area);
         warehouse.putParameters(rectangle.getRectangleId(), parameters);
     }
 
     public void fillWarehouse(List<Rectangle> rectangles) {
-        for(Rectangle rectangle: rectangles) {
+        for (Rectangle rectangle : rectangles) {
             fillWarehouse(rectangle);
         }
     }

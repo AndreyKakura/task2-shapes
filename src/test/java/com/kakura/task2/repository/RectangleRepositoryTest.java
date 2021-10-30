@@ -43,6 +43,6 @@ class RectangleRepositoryTest {
     }
 
     private static Stream<RectangleSpecification> provideQueryData() {
-        return Stream.of(new FirstQuadrantSpecification(), new IdSpecification(1));
+        return Stream.of(new FirstQuadrantSpecification());
     }
 }

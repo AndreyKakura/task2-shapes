@@ -60,5 +60,4 @@ public class Point {
         return sb.toString();
     }
 
-
 }
