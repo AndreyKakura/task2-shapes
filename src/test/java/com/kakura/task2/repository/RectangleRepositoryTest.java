@@ -21,14 +21,15 @@ class RectangleRepositoryTest {
         rectangleRepository = RectangleRepository.getInstance();
         rectangleRepository.add(new Rectangle(new Point(1, 1), new Point(1, 4),
                 new Point(6, 4), new Point(6, 1)));
-        rectangleRepository.add(new Rectangle(new Point(-2,-2), new Point(-2,2),
-                new Point(4,2), new Point(4, -2)));
-        rectangleRepository.add(new Rectangle(new Point(0,0), new Point(0,7),
-                new Point(12,7), new Point(12, 0)));
+        rectangleRepository.add(new Rectangle(new Point(-2, -2), new Point(-2, 2),
+                new Point(4, 2), new Point(4, -2)));
+        rectangleRepository.add(new Rectangle(new Point(0, 0), new Point(0, 7),
+                new Point(12, 7), new Point(12, 0)));
     }
 
     @AfterEach
     void tearDown() {
+        rectangleRepository.removeAll(rectangleRepository.getRectangles());
         rectangleRepository = null;
     }
 

@@ -25,6 +25,7 @@ class RepositoryFillerTest {
     @AfterEach
     void tearDown() {
         repositoryFiller = null;
+        repository.removeAll(repository.getRectangles());
         repository = null;
     }
 
